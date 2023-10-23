@@ -1,2 +1,2 @@
-# Taller_2_TypeScript
-María Paula Estupiñan Martinez (202212331)
+# Taller_1_TypeScript
+María Paula EStupiñan Martinez (202212331)

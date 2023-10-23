@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="no-referrer" />
+    <title>Tv series</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="div">
+        <img src="https://i.postimg.cc/nhwkdh8K/logo.png" width="150" height="90">
+    </div>
+    
+    <!-- Añadido margen con clase -->
+    <div class="row row-with-margin"> 
+        <div class="col-md-8">
+            <!-- Cambio en la clase de la tabla para que coja el color -->
+            <table class="tabla"> 
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Channel</th>
+                        <th>Seasons</th>
+                    </tr>
+                </thead>
+                <tbody id="series"></tbody>
+            </table>
+            <p class="espacios">Seasons Averages: <span id="promedio-seasons"></span></p>
+        </div>
+
+        <div class="col-md-4">
+            <div id="serie-details" class="card">
+                <img class="card-img-top" alt="Serie Image">
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text"></p>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <a class="btn btn-danger">Go to Channel</a>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+
+    <script type="module" src="./scripts/serie.js"></script>
+    <script>var exports = {};</script>
+    <script type="module" src="./scripts/data.js"></script>
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+</html>
